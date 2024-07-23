@@ -1,1 +1,151 @@
- 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1d203a;
+  color: white;
+  font-family: sans-serif;
+}
+
+.google {
+  max-width: 500px;
+  color: lightgray;
+  /* text-align: justify; */
+  word-break: break-all;
+}
+.container {
+  /* padding: 200px; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.first-row {
+  padding: 40px;
+  background-color: #272b4a;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.fa-star,
+.fa-star-half {
+  color: #ffc400;
+  font-size: 12px;
+}
+.firsti,
+.secondi {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.firsti {
+  color: #1d203a;
+}
+
+.forstar p {
+  font-size: 11px;
+  margin-top: 4px;
+}
+.row-first {
+  text-align: center;
+  min-width: 108px;
+}
+.https {
+  color: red;
+  margin: 10px 0;
+}
+.red {
+  color: red;
+}
+/*  */
+.second-row {
+  padding: 40px;
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+.data-two {
+  width: 100%;
+}
+.data-top- {
+  margin: 30px 0;
+}
+
+.fordown {
+  margin-top: 5px;
+}
+.data-text p {
+  margin: 7px 0;
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+.bar {
+  background-color: #272b4d;
+  height: 10px;
+  position: relative;
+  width: 50%;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+.bar::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  background-color: red;
+  height: 10px;
+  border-radius: 10px;
+}
+.pto {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+@media (max-width: 727px) {
+  .data-one {
+    text-align: center;
+    margin-bottom: px;
+  }
+  .paid {
+    text-align: center;
+    margin: 20px;
+  }
+  body {
+    height: fit-content;
+  }
+  .middle {
+    flex-direction: column;
+  }
+  .row-second {
+    text-align: center;
+  }
+  .second-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  .pto {
+    background-color: #181a33;
+    padding: 10px;
+    flex-direction: column;
+    margin: 30px 0;
+    border-radius: 10px;
+  }
+  .bar {
+    width: 90%;
+  }
+}
